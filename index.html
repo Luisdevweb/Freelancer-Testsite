@@ -17,33 +17,31 @@
     </header>
     <div class="container">
         <nav class="navbar" id="navbar">
-            <a class="navbar__link" href="#landing">inicio</a>
+            <a class="navbar__link" href="#hero">inicio</a>
             <a class="navbar__link" href="#services">servicios</a>
             <a class="navbar__link" href="#about">nosotros</a>
             <a class="navbar__link" href="#contactme">contacto</a>
         </nav>
     </div>
-    <div class="landing-container">
-        <section class="landing" id="landing">
-            <h2 class="landing__title">Desarrollo web Front-end a medida de tus necesidades</h2>
-            <div class="landing__content">
+    
+    <section class="hero hero-container--flex" id="hero">
+            <h2 class="hero__title">Desarrollo web Front-end a medida de tus necesidades</h2>
+            <div class="hero__content">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" width="25px" height="25px" viewBox="0 0 20 20" fill="rgb(165, 60, 60)">
                     <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
                 </svg>
                 <span class="location">Lima, Peru</span>
-                <p class="landing__content__text">optimizamos la carga de tu pagina web </p>
-                <p class="landing__content__text">Mejoramos la apariencia de tu pagina web </p>
-                <p class="landing__content__text">Desarrollamos webs personalizados</p>     
+                <p class="hero__content__text">optimizamos la carga de tu pagina web </p>
+                <p class="hero__content__text">Mejoramos la apariencia de tu pagina web </p>
+                <p class="hero__content__text">Desarrollamos webs personalizados</p>     
             </div>
-            <a class="btn" href="#contactme">Contactanos</a>
-        </section>
-    </div>
-
-   
-    
-    <main class="services container" id="services">
+        <a class="btn" href="#contactme">Contactanos</a>
+    </section>
+           
+    <main class="services container " id="services">
         <h2 class="services__title">Servicios</h2>
-            <section class="service">
+        <div class="services-container--flex">
+            <section class="service ">
                 <h3 class="service__title">Desarrollo web Front-end</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -93,6 +91,7 @@
                 <i class="fab fa-wordpress-simple"></i>
                 <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum ab ipsam hic natus enim debitis, alias est odit rerum! Ullam dignissimos quam esse, quis quasi debitis incidunt minima impedit?</p>
             </section>
+        </div>    
     </main>
     <section class="contact" id="contactme">
         <h2 class="contact__title">Contactame</h2>
