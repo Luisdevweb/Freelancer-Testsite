@@ -118,12 +118,41 @@ body{
     color:rgb(65, 60, 65);
 }
 .btn{
-    padding:1.8rem 2.5rem;
+    padding:1.2rem 2rem;
     border:0;
     border-radius:10px;
     text-decoration:none;
     color:#fff;
+    transform:scale(1);
+    transition:transform .4s ease-in-out;
+    
+}
+.btn:hover{
+    transform:scale(1.4);
+}
+.btn--bgorange
+{
     background-color:rgb(165, 60, 60);
+}
+
+.btn--bgpurple
+{
+    background-color:#d18cce;
+}
+.btn--red{
+    background-color:rgba(77, 45, 45, 0.5);
+}
+.btn--blue{
+    background-color:rgba(45, 45, 97, 0.5);
+}
+
+.btn--fwz{
+    font-weight:bold;
+    font-size:2rem;
+}
+.btn--mg{
+    margin:0 .8rem;
+    
 }
 
 /**services**/
@@ -184,19 +213,39 @@ body{
     padding:3rem;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
+.contact__title
+{
+    font-size:3rem;
+    text-align:center;    
+}
+.contact__text{
+    width:80%;
+    margin:2rem auto;
+
+}
 .form{
-    width:60%;
-    max-width:30rem;
+    width:50%;
+    max-width:40rem;
     margin:0 auto;
     padding:3rem;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius:2rem;
+    border:1px solid rgb(101, 48, 112,.6);
+}
+.form__fieldset{
+    border:none;
 }
 .form__field{
     margin:1rem auto;
 }
 .form__label,
 .form__input{
+    margin-top:1rem;
     width:100%;
+}
+.form__btn
+{
+    text-align:center;
 }
 
 
