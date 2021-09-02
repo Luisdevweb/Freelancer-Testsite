@@ -15,16 +15,14 @@
         <h1 class="header__title"> Freelancer<span> Front end </span></h1>
         <span class="menu" id="menu">&#9776;</span>
     </header>
-    <div class="container">
-        <nav class="navbar" id="navbar">
-            <a class="navbar__link" href="#hero">inicio</a>
-            <a class="navbar__link" href="#services">servicios</a>
-            <a class="navbar__link" href="#about">nosotros</a>
-            <a class="navbar__link" href="#contactme">contacto</a>
-        </nav>
-    </div>
     
-    <section class="hero hero-container--flex" id="hero">
+    <nav class="navbar container" id="navbar">
+        <a class="navbar__link" href="#hero">inicio</a>
+        <a class="navbar__link" href="#services">servicios</a>
+        <a class="navbar__link" href="#about">nosotros</a>
+        <a class="navbar__link" href="#contactme">contacto</a>
+    </nav>  
+    <section class="hero hero-container" id="hero">
             <h2 class="hero__title">Desarrollo web Front-end a medida de tus necesidades</h2>
             <div class="hero__content">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" width="25px" height="25px" viewBox="0 0 20 20" fill="rgb(165, 60, 60)">
@@ -33,14 +31,14 @@
                 <span class="location">Lima, Peru</span>
                 <p class="hero__content__text">optimizamos la carga de tu pagina web </p>
                 <p class="hero__content__text">Mejoramos la apariencia de tu pagina web </p>
-                <p class="hero__content__text">Desarrollamos webs personalizados</p>     
+                <p class="hero__content__text">Desarrollamos webs personalizados</p>    
             </div>
-        <a class="btn btn--bgorange" href="#contactme">Contactanos</a>
+            <a class="btn btn--bgorange" href="#contactme">Contactanos</a> 
     </section>
            
-    <main class="services container " id="services">
-        <h2 class="services__title">Servicios</h2>
-        <div class="services-container--flex">
+    <main class="services container " >
+        <h2 class="services__title" id="services">Servicios</h2>
+        <div class="services-container">
             <section class="service">
                <div class="card">
                     <div  class="card__header">
@@ -68,8 +66,8 @@
                         <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolores beatae facilis, quis dolorum amet eius? Eum ad quis sint, quidem laudantium quibusdam? Asperiores dolore porro blanditiis quidem ipsam debitis!</p>
                     </div>
                     <div class="card__footer">
-                        <button class="btn btn--blue btn--mg">Asesoria</button>
-                        <button class="btn btn--red btn--mg">Solicitar</button>
+                        <button class="btn btn--blue btn--mg btn--scale">Asesoria</button>
+                        <button class="btn btn--red btn--mg btn--scale">Solicitar</button>
                     </div>
                </div>
                 
@@ -105,8 +103,8 @@
                         <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel qui consequuntur amet laudantium doloremque ad ducimus eius, facere, exercitationem officiis cum praesentium nesciunt eligendi consectetur? Aliquid distinctio vitae excepturi a.</p>
                     </div>
                     <div class="card__footer">
-                        <button class="btn btn--blue btn--mg">Asesoria</button>
-                        <button class="btn btn--red btn--mg">Solicitar</button>
+                        <button class="btn btn--blue btn--mg btn--scale">Asesoria</button>
+                        <button class="btn btn--red btn--mg btn--scale">Solicitar</button>
                     </div>
                 </div>
             </section>
@@ -122,45 +120,57 @@
                         <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum ab ipsam hic natus enim debitis, alias est odit rerum! Ullam dignissimos quam esse, quis quasi debitis incidunt minima impedit?</p>
                     </div>
                     <div class="card__footer">
-                        <button class="btn btn--blue btn--mg">Asesoria</button>
-                        <button class="btn btn--red btn--mg">Solicitar</button>
+                        <button class="btn btn--blue btn--mg btn--scale">Asesoria</button>
+                        <button class="btn btn--red btn--mg btn--scale">Solicitar</button>
                     </div>
                </div>
             </section>
         </div>    
     </main>
+    <!--Nosotros start-->
+    <section class="about" id="about" >
+        <div class="container about-container">
+            <div class="about-content">
+                <h3 class="about__title">Nosotros</h3>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima eius suscipit sequi similique doloremque totam esse officiis maxime, impedit soluta beatae, commodi odio necessitatibus eveniet quae laboriosam, repellendus distinctio eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem aperiam repellat unde, magnam doloremque aliquid fuga dolorum harum ab praesentium dolor amet, voluptates nihil rerum expedita. Dolor, cumque quam?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aut pariatur perferendis ipsam earum vitae doloribus blanditiis impedit. Perspiciatis possimus animi voluptas incidunt molestiae. Perferendis ut totam reiciendis illum obcaecati!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Nosotros end -->
+
+    <!--Contact -formulario Start-->
     <section class="contact" id="contactme">
-        <h2 class="contact__title">Contactame</h2>
+        <h3 class="contact__title">Contactame</h3>
         <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel beatae aut provident facilis necessitatibus dolores quos, incidunt aliquid amet doloremque repellat vitae maiores quam, illum nostrum consectetur. Nesciunt, quam!</p>
         <form class="form">
             <fieldset class="form__fieldset">
                 <legend class="form__legend">Completa tus datos</legend>
                 <div class="form__field">
                     <label class="form__label" for="name">Nombre</label>
-                    <input class="form__input"type="text" placeholder="nombre">
+                    <input class="form__input" type="text" id="name" placeholder="nombre">
                 </div>
                 <div class="form__field">
                     <label class="form__label" for="phone">Telefono</label>
-                    <input class="form__input" type="tel" placeholder="+51000000000">
+                    <input class="form__input" type="tel" id="phone" placeholder="+51000000000">
                 </div>
                 <div class="form__field" >
                     <label class="form__label" for="email">Correo</label>
-                    <input class="form__input" type="email" placeholder="example@example.com">
+                    <input class="form__input" type="email" id="email" placeholder="example@example.com">
                 </div>    
                 <div class="form__field">
                     <label class="form__label" for="message">mensaje</label>
-                    <textarea class="form__input" cols="30" rows="10"></textarea>
+                    <textarea class="form__input" id="message" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form__btn">
-                    <input class="btn btn--bgpurple btn--fwz" type="submit" value="enviar">
+                    <input class="btn btn--bgpurple btn--fwz btn--scale" type="submit" value="enviar">
                 </div>
             </fieldset>
         </form>
     </section>
+
     <footer class="footer">
         <p class="copyright">Todos los derechos Reservados.&copy;2021. Created by Luismac</p>
     </footer>
-
 
     <script src="./js/scripts.js"></script>
 </body>
