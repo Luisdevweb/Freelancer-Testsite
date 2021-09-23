@@ -119,7 +119,7 @@ body{
     font-weight:400;
     color:rgb(65, 60, 65);
 }
-.btn{
+.button{
     padding:1.2rem 2rem;
     border:0;
     outline:0;
@@ -128,35 +128,35 @@ body{
     color:#fff; 
     transition:transform .4s ease-in-out;
 }
-.btn--scale
+.button--scale
 {
     transform:scale(1); 
 }
-.btn--scale:hover
+.button--scale:hover
 {
     transform:scale(1.3);
 }
-.btn--bgorange
+.button--orange
 {
     background-color:rgb(165, 60, 60);
 }
 
-.btn--bgpurple
+.button--purple
 {
     background-color:#d18cce;
 }
-.btn--red{
+.button--red{
     background-color:rgba(77, 45, 45, 0.5);
 }
-.btn--blue{
+.button--blue{
     background-color:rgba(45, 45, 97, 0.5);
 }
 
-.btn--fwz{
+.button--fwz{
     font-weight:bold;
     font-size:2rem;
 }
-.btn--mg{
+.button--mg{
     margin:0 .8rem;  
 }
 
@@ -170,7 +170,7 @@ body{
 }
 .services__title{
     text-transform: uppercase;
-    line-height:5;
+    line-height:3;
     font-size:4rem;
     font-weight:700;
     text-align:center;
@@ -214,16 +214,16 @@ body{
 .about{
     padding:10rem 0;
     background-image:
-    linear-gradient(to right,transparent 50% ,rgb(159, 188, 192) 65% ,rgb(140, 180, 187) 100%),
+    linear-gradient(to left,transparent 45% ,rgb(127, 181, 187) 60% ,rgb(41, 100, 110) 100%),
     url(../assets/img/team_dev.jpg);
     background-repeat:no-repeat;
-    background-size:100% 80rem;
+    background-size:100% 70rem;
     background-position: left center;
 }
 .about-container
 {
     display:flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 .about-content
 {
@@ -277,7 +277,7 @@ body{
     margin-top:1rem;
     width:100%;
 }
-.form__btn
+.form__button
 {
     text-align:center;
 }
