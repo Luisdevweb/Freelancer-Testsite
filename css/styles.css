@@ -63,7 +63,7 @@ input:focus {
 }
 @media (hover: hover) {
   .menu:hover {
-    font-size: 1rem;
+    font-size: 2.1rem;
     cursor: pointer;
   }
 }
@@ -80,6 +80,11 @@ input:focus {
   background-color: rgb(51, 51, 51, 0.9);
   transform: translateX(-110%);
 }
+@media screen and (min-width: 1024px) {
+  .navbar {
+    width: 35vw;
+  }
+}
 .navbar--translate {
   transform: translateX(0);
 }
@@ -90,12 +95,15 @@ input:focus {
   text-transform: capitalize;
   text-decoration: none;
   color: #fff;
-  cursor: pointer;
 }
-.navbar__link:hover {
-  font-size: 4rem;
-  color: rgb(32, 118, 121);
+@media (hover: hover) {
+  .navbar__link:hover {
+    font-size: 3rem;
+    color: rgb(32, 118, 121);
+    cursor: pointer;
+  }
 }
+
 .navbar__link--active {
   border-bottom: 3px solid rgb(85, 12, 12);
 }
@@ -103,8 +111,17 @@ input:focus {
 .hero-container {
   height: 60vh;
 }
-.hero__inner {
+
+.hero__content {
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .hero-container {
+    height: 100vh;
+  }
+  .hero__content {
+    height: 50vh;
+  }
 }
 .hero {
   height: 100%;
@@ -128,7 +145,7 @@ input:focus {
   font-weight: 900;
   text-transform: uppercase;
 }
-.hero__content {
+.hero__body {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -138,6 +155,21 @@ input:focus {
   font-size: 1rem;
   font-weight: 400;
   color: rgb(65, 60, 65);
+}
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  .hero__body {
+    width: 80%;
+    margin-bottom: 3em;
+  }
+  .hero__text {
+    font-size: 1.3rem;
+  }
+  .location {
+    font-size: 1.2rem;
+  }
 }
 .button {
   padding: 1em 2em;
@@ -169,13 +201,23 @@ input:focus {
   font-weight: 900;
   text-align: center;
 }
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 .card {
+  max-width: 400px;
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   margin-bottom: 1em;
   margin-right: auto;
   margin-left: auto;
   padding: 1em;
   text-align: center;
+}
+@media screen and (min-width: 576px) {
+  .card {
+    padding: 2.1em 0.9em;
+  }
 }
 .card__header {
   margin-bottom: 0;
@@ -190,7 +232,7 @@ input:focus {
   align-items: center;
   margin: 1rem 0;
 }
-.service__text {
+.card__text {
   font-size: 0.9rem;
   padding: 0 2em;
 }
@@ -213,9 +255,26 @@ input:focus {
   background-repeat: no-repeat;
   background-size: 100% 35rem;
   background-position: left center;
+  margin-bottom: 2em;
 }
-.about-content {
+
+.about__content {
+  height: 100%;
   text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .about {
+    height: 50vh;
+  }
+  .column {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    height: 50vh;
+  }
 }
 .about__title {
   font-size: 1.8rem;
@@ -223,9 +282,17 @@ input:focus {
   text-transform: uppercase;
 }
 .about__text {
+  flex-basis: 50%;
   font-size: 0.9rem;
   font-weight: 500;
   padding: 0.8rem;
+}
+@media screen and (min-width: 720px) {
+  .about__text {
+    padding: 0 0 0 1.3em;
+    margin-top: 0;
+    font-size: 1rem;
+  }
 }
 
 /** Contacto */
